@@ -1,0 +1,91 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  padding-top: 80px;
+}
+
+/* Navbar */
+.navbar {
+  transition: background-color 0.3s ease;
+  height: 70px;
+}
+
+/* Hero Section */
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+  url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1600&q=80')
+  center/cover no-repeat;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding-top: 0;
+}
+
+.text-warning {
+  color: #FFD43B !important;
+  text-shadow: 0 0 10px #FFD43B, 0 0 20px #FFD43B;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px #FFD43B; }
+  to { text-shadow: 0 0 25px #FFD43B, 0 0 40px #FFD43B; }
+}
+
+/* About */
+#about img {
+  border: 5px solid #FFD43B;
+}
+
+/* Skill Cards */
+.skill-box {
+  background: white;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Project Cards */
+.project-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* Testimonials */
+.carousel-item {
+  padding: 2rem;
+}
+
+.carousel-item h5 {
+  color: #FFD43B;
+}
+
+/* Contact Buttons */
+#contact .btn:hover {
+  background-color: #FFD43B;
+  color: #000;
+  border-color: #FFD43B;
+}
+
+/* Footer */
+footer {
+  font-size: 0.9rem;
+}
+
+.text-warning {
+  color: #ffdd55 !important;
+  text-shadow: 0 0 15px rgba(0,0,0,0.9);
+}
